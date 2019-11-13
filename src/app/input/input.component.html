@@ -1,0 +1,26 @@
+<br><br><br><div class="content">
+<mat-form-field>
+<input type="text" matInput placeholder="Enter the first number" [(ngModel)]="num1">
+</mat-form-field><br>
+<mat-form-field>
+<input type="text" matInput placeholder="Enter the second number" [(ngModel)]="num2">
+</mat-form-field><br><br>
+
+<!-- <mat-form-field>
+        <mat-label>Select an option</mat-label>
+        <mat-select [(value)]="selected">
+          <mat-option>None</mat-option>
+          <mat-option value="add">Add</mat-option>
+          <mat-option value="subtract">Subtract</mat-option>
+          <mat-option value="multiply">Multiply</mat-option>
+          <mat-option value="divide">Divide</mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      <mat-radio-group aria-label="Select an option">
+            <mat-radio-button (click)="add()" value="add">Add</mat-radio-button>
+            <mat-radio-button (click)="subtract()" value="subtract">Subtract</mat-radio-button>
+            <mat-radio-button (click)="multiply()" value="multiply">Multiply</mat-radio-button>
+            <mat-radio-button (click)="divide()" value="divide">Divide</mat-radio-button>
+          </mat-radio-group>
+          
+</div>

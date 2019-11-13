@@ -1,0 +1,9 @@
+mat-toolbar{
+    background: pink;
+    text-align: center;
+}
+.textheader{
+
+    flex: auto;
+    text-align: center;
+}
